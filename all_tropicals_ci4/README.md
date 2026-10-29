@@ -27,7 +27,7 @@ app/
 │   └── Admin/                 # Secure CMS Dashboard Controllers
 │       ├── Dashboard.php      # Main admin panel homepage
 │       ├── Catalog.php        # Manage plant inventory & sync availability sheets
-│       ├── Catalog.php        # Manage plant inventory & sync availability sheets
+│       ├── Srvices.php        # Service information pages
 │       ├── Leads.php          # Review bulk orders and custom quote submissions
 │       ├── Articles.php       # WYSIWYG management for insights & field logs
 │       └── Subscribers.php    # Manage newsletter mailing lists & export CSVs
@@ -46,10 +46,16 @@ app/
 │   │   ├── products/          # Plant catalog templates
 │   │   │   ├── index.php      # Table view list with filters & excel download triggers
 │   │   │   └── view.php       # Specific product page with Sourcing Inquiry form
+│   │   ├── inquiry/           # Quote Request templates
+│   │   │   ├── index.php      # Quote Request layout
+│   │   ├── services/          # Service Informaton pages
+│   │   │   ├── index.php      # Services list layout
+│   │   │   └── view.php       # Specific prservice page
 │   │   ├── insights/          # Blog / Field Log templates
 │   │   │   ├── index.php      # Resource feed grid layout
-│   │   │   └── read.php       # Full post layout with integrated slider/carousel
-│   │   └── contact.php        # Contact page layout with B2B validation logic
+│   │   │   └── read.php       # Full post layout
+│   │   ├── contact.php        # Contact page layout with B2B validation logic
+│   │   └── about.php          # About Us page
 │   └── admin/                 # CMS Backend UI Templates
 │       ├── login.php          # Admin secure portal login screen
 │       ├── dashboard.php      # Metrics panel (Recent inquiries count, graph)
