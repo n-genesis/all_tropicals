@@ -27,10 +27,12 @@ app/
 │   └── Admin/                 # Secure CMS Dashboard Controllers
 │       ├── Dashboard.php      # Main admin panel homepage
 │       ├── Catalog.php        # Manage plant inventory & sync availability sheets
-│       ├── Srvices.php        # Service information pages
+│       ├── Templates.php      # Advanced Template file editing
+│       ├── Services.php       # Service information pages
 │       ├── Leads.php          # Review bulk orders and custom quote submissions
 │       ├── Articles.php       # WYSIWYG management for insights & field logs
-│       └── Subscribers.php    # Manage newsletter mailing lists & export CSVs
+│       ├── Subscribers.php    # Manage newsletter mailing lists & export CSVs
+│       └── Settings.php    # Manage website information and settings
 ├── Models/
 │   ├── ProductModel.php       # Interacts with `products` table
 │   ├── ServiceModel.php       # Interacts with `services` (Insights posts)
@@ -38,10 +40,9 @@ app/
 │   ├── ArticleModel.php       # Interacts with `articles` (Insights posts)
 │   └── SubscriberModel.php    # Interacts with `subscribers` (Newsletter list)
 ├── Views/
-│   ├── layouts/               # Shared structural files
-│   │   ├── main.php           # Public base layout wrapper (Bootstrap 5 template)
-│   │   └── admin.php          # Protected admin panel layout wrapper
 │   ├── public/                # Public facing templates
+│   │   ├── layouts/           # Shared structural files
+│   │   │   └── main.php       # Public base layout wrapper (Bootstrap 5 template)
 │   │   ├── home.php           # Home page template
 │   │   ├── products/          # Plant catalog templates
 │   │   │   ├── index.php      # Table view list with filters & excel download triggers
@@ -57,11 +58,14 @@ app/
 │   │   ├── contact.php        # Contact page layout with B2B validation logic
 │   │   └── about.php          # About Us page
 │   └── admin/                 # CMS Backend UI Templates
+│       ├── layouts/           # Shared structural files
+│       │   └── main.php       # Admin panel layout wrapper
 │       ├── login.php          # Admin secure portal login screen
 │       ├── dashboard.php      # Metrics panel (Recent inquiries count, graph)
 │       ├── catalog/           # Add/Edit products and toggle availability status
 │       ├── leads/             # View, search, and change status of B2B entries
 │       ├── articles/          # Content creation engine for blog entries
+│       ├── templates/         # Advanced file editing
 │       └── subscribers/       # List of emails with option to export .csv files
 ```
 
