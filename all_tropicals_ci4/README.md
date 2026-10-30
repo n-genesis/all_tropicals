@@ -22,6 +22,7 @@ app/
 │   ├── Products.php           # Handles available plant listings (Non-transactional)
 │   ├── Services.php           # Service information articles & business resources
 │   ├── Inquiries.php          # Processes Bulk Orders & Free Business Quotes
+│   ├── Pages.php              # Public static general information pages 
 │   ├── Insights.php           # Public blog articles & architectural resources
 │   ├── Newsletter.php         # Public subscription endpoint
 │   └── Admin/                 # Secure CMS Dashboard Controllers
